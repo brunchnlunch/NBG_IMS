@@ -1,0 +1,19 @@
+@(products: List[Product], stockRequired: Boolean)(implicit flash: Flash, lang: Lang)
+@import play.api.Play.current
+@import play.api.i18n.Messages
+@import play.api.i18n.Messages.Implicits._
+@main(Messages("application.name")) {
+	<div>
+		@if(stockRequired){
+			<h2>Stock is low!</h2>
+			} else {
+			<h2>No new stock required.</h2>
+			}
+	</div>
+	<h2>Product List</h2>
+	<dl class ="products">
+		@for(product <- products) {
+			<dt>@product.name</dt>
+		}
+	</dl>
+	}

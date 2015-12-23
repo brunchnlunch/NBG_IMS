@@ -1,0 +1,16 @@
+@(suppliers: List[Supplier])(implicit flash: Flash, lang: Lang)
+@import play.api.Play.current
+@import play.api.i18n.Messages
+@import play.api.i18n.Messages.Implicits._
+@main(Messages("application.name")) {
+	<h2>Supplier List</h2>
+	<dl>
+		@for(supplier <- suppliers){
+			<dt><a href="@controllers.routes.Suppliers.show(supplier.id)">@supplier.company</a></dt>
+			<dd>Id: @supplier.id</dd>
+			<dd>Contact name: @supplier.contactName</dd>
+			<dd>Phone number: @supplier.phoneNumber</dd>
+			<dd>Email: @supplier.email</dd>
+			}
+	</dl>
+}

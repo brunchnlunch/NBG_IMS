@@ -1,0 +1,23 @@
+@(supplier: Supplier)(implicit flash: Flash, lang: Lang)
+@import play.api.Play.current
+@import play.api.i18n.Messages.Implicits._
+@import models.Product
+@main("Supplier details") {
+	<h2>
+		@supplier.company
+	</h2>
+	<dl>
+			<dt>Id: @supplier.id</dt>
+			<dt>Contact name: @supplier.contactName</dt>
+			<dt>Phone number: @supplier.phoneNumber</dt>
+			<dt>Email: @supplier.email</dt>
+			<dt>Products sold:</dt>
+			@for(product <- supplier.products) {
+				<dd>@Product.findByEan(product).get.name</dd>
+				<dd>@product</dd>
+			}
+	</dl>
+	
+	
+	
+}
