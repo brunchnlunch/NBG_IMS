@@ -9,13 +9,15 @@ import play.api.mvc._
 import play.api.mvc.{Action, Controller, Flash}
 import play.api.Play.current
 import models.Supplier
+import models.ProductPartForm
 
 class Suppliers extends Controller {
+  private val productForm: Form[ProductPartForm] = Form(mapping("ean" -> longNumber)(ProductPartForm.apply)(ProductPartForm.unapply))
   
   def supplierList = Action {
     implicit request =>
       val suppliers = Supplier.findAll
-      Ok(views.html.supplierList(suppliers))
+      Ok(views.html.supplierList(suppliers, productForm))
   }
   
   def show(id: Long) = Action {
@@ -24,6 +26,24 @@ class Suppliers extends Controller {
       Ok(views.html.supplierDetails(supplier))
   }
   
+  def findByProduct = Action { implicit request =>
+	val newProductForm = productForm.bindFromRequest()
+	newProductForm.fold(
+		hasErrors = { form =>
+			Redirect(routes.Suppliers.supplierList())
+		},
+		success = { newProduct =>
+		  //make a new route and has it the productPart argument
+			val productSuppliers = Supplier.findByProduct(newProductForm.get.ean)
+		  Ok(views.html.supplierList(productSuppliers, productForm))
+		}
+	)
+  }
   
+  def toggle(id: Long) = Action {
+    implicit request =>
+      Supplier.toggleAuto(id)
+      Redirect(routes.Suppliers.supplierList())
+  }
   
 }

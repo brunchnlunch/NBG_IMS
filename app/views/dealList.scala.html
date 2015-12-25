@@ -1,0 +1,14 @@
+@(deals: List[Deal])(implicit flash: Flash, lang: Lang)
+@import play.api.Play.current
+@import play.api.i18n.Messages
+@import play.api.i18n.Messages.Implicits._
+@main(Messages("application.name")) {
+	<h2>Deals List</h2>
+	<dl class ="deals">
+		@for(deal <- deals) {
+			<dt><a href="@controllers.routes.Deals.show(deal.id)">Deal id: @deal.id</a></dt>
+			<dd>Company id: @deal.companyId</dd>
+			<dd>Company name: @Supplier.findById(deal.companyId).get.company</dd>
+		}
+	</dl>
+	}

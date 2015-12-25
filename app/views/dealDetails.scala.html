@@ -1,0 +1,16 @@
+@(deal: Deal)(implicit flash: Flash, lang: Lang)
+@import play.api.Play.current
+@import play.api.i18n.Messages
+@import play.api.i18n.Messages.Implicits._
+@main(Messages("application.name")) {
+	<dt>Deal id: @deal.id</dt>
+	<dt>Company id: @deal.companyId</dt>
+	<dt>Company name: @Supplier.findById(deal.companyId).get.company</dt>
+	<div>
+		@for(product <- deal.products){
+			<dt>@product.ean</dt>
+			<dd>quantity: @product.quantity</dd>
+			<dd>price: @product.price</dd>
+		}
+	</div>
+}

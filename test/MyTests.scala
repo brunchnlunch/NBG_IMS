@@ -48,6 +48,14 @@ object MyTests extends Specification {
       assert(suppliers.isInstanceOf[List[Supplier]])
     }
     
+    "Toggle if a supplier can be automatically contacted" in new WithApplication {
+      val id = 1
+      val bool = Supplier.findById(id).get.autoDeal
+      Supplier.toggleAuto(id)
+      val newBool = Supplier.findById(id).get.autoDeal
+      assert(newBool == !bool)
+    }
+    
   }
   
 }

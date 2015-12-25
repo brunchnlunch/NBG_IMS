@@ -11,6 +11,7 @@
 			<dt>Contact name: @supplier.contactName</dt>
 			<dt>Phone number: @supplier.phoneNumber</dt>
 			<dt>Email: @supplier.email</dt>
+			<dt>Automatically contact: @supplier.autoDeal</dt>
 			<dt>Products sold:</dt>
 			@for(product <- supplier.products) {
 				<dd>@Product.findByEan(product).get.name</dd>

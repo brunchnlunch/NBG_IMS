@@ -1,7 +1,9 @@
-@(suppliers: List[Supplier])(implicit flash: Flash, lang: Lang)
+@(suppliers: List[Supplier], productForm: Form[ProductPartForm])(implicit flash: Flash, lang: Lang)
 @import play.api.Play.current
 @import play.api.i18n.Messages
 @import play.api.i18n.Messages.Implicits._
+@import helper._
+@import play.api.mvc.Flash
 @main(Messages("application.name")) {
 	<h2>Supplier List</h2>
 	<dl>
@@ -11,6 +13,16 @@
 			<dd>Contact name: @supplier.contactName</dd>
 			<dd>Phone number: @supplier.phoneNumber</dd>
 			<dd>Email: @supplier.email</dd>
+			<dd>Automatically contact: @supplier.autoDeal</dd>
+			<dd><a href="@controllers.routes.Suppliers.toggle(supplier.id)">Toggle automatic contact</a></dd>
 			}
 	</dl>
+	
+	@helper.form(action = routes.Suppliers.findByProduct()) {
+		<fieldset>
+			@helper.inputText(productForm("ean"))
+		</fieldset>
+		<p style="padding-bottom:70px"><input type="submit" class="btn primary" value='enter'></p>
+	}	
+	
 }
