@@ -9,11 +9,13 @@ GET     /RequiredProducts           controllers.Products.requiredList
 GET     /Suppliers                  controllers.Suppliers.supplierList
 GET     /Suppliers/:id              controllers.Suppliers.show(id: Long)
 POST    /Suppliers                  controllers.Suppliers.findByProduct
-GET     /Suppliers/try/:id          controllers.Suppliers.toggle(id: Long)
+GET     /Suppliers/a/:id            controllers.Suppliers.toggle(id: Long)
 #Why does the above line work??!!
 GET     /Deals                      controllers.Deals.dealList
 GET     /Deals/:id                  controllers.Deals.show(id: Long)
-
+GET     /Deals/a/:number            controllers.Suppliers.autoContact(number: Long)
+#Again, why does the above work?
+GET     /Deals/b/:number            controllers.Deals.recommend(number: Long)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

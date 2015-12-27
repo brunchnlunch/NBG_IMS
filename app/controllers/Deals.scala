@@ -26,4 +26,12 @@ class Deals extends Controller {
       Ok(views.html.dealDetails(deal))
   }
   
+  //we pass an arbitrary number to add to the address
+  def recommend(number : Long) = Action {
+    implicit request =>
+      Deal.setBestDeals
+      Redirect(routes.Deals.dealList())
+  }
+  
+  
 }

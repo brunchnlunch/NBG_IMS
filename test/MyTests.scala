@@ -5,6 +5,8 @@ import play.api.test._
 import play.api.test.Helpers._
 import models.Product
 import models.Supplier
+import models.ProductPart
+import models.Deal
 
 @RunWith(classOf[JUnitRunner])
 object MyTests extends Specification {
@@ -54,6 +56,27 @@ object MyTests extends Specification {
       Supplier.toggleAuto(id)
       val newBool = Supplier.findById(id).get.autoDeal
       assert(newBool == !bool)
+    }
+    
+    //ProductPart tests ---------------------------
+    "return the price per item for a product deal" in new WithApplication{
+      val deal = Deal.findById(1).get
+      val productPart = deal.products.head
+      val pPI = productPart.pricePerItem
+      assert(pPI == 5)
+    }
+    
+    //Deal tests -------------------------------
+    "add company deals which are toggled for auto contact to deals list" in new WithApplication{
+      Supplier.toggleAuto(2) //note that 1 is already toggled by a previous test
+      Deal.autoContact
+      println(Deal.deals)
+      assert(Deal.deals.nonEmpty)
+    }
+    
+    "asdhasdh" in new WithApplication {
+      Deal.bestDeals
+      assert(1==2)
     }
     
   }

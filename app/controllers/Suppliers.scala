@@ -10,6 +10,7 @@ import play.api.mvc.{Action, Controller, Flash}
 import play.api.Play.current
 import models.Supplier
 import models.ProductPartForm
+import models.Deal
 
 class Suppliers extends Controller {
   private val productForm: Form[ProductPartForm] = Form(mapping("ean" -> longNumber)(ProductPartForm.apply)(ProductPartForm.unapply))
@@ -44,6 +45,13 @@ class Suppliers extends Controller {
     implicit request =>
       Supplier.toggleAuto(id)
       Redirect(routes.Suppliers.supplierList())
+  }
+  
+  //we take a number to add it to the route, no other reason
+  def autoContact(number:Long) = Action {
+    implicit request =>
+      Deal.autoContact
+      Redirect(routes.Deals.dealList)
   }
   
 }

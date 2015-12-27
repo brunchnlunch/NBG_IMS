@@ -7,8 +7,21 @@
 	<dl class ="deals">
 		@for(deal <- deals) {
 			<dt><a href="@controllers.routes.Deals.show(deal.id)">Deal id: @deal.id</a></dt>
-			<dd>Company id: @deal.companyId</dd>
 			<dd>Company name: @Supplier.findById(deal.companyId).get.company</dd>
+			<dd>Recommended: @deal.recommended</dd>
+			<div>
+				@for(product <- deal.products){
+					<dt>@product.ean</dt>
+					<dd>price per item: @product.pricePerItem</dd>
+				}
+			</div>
+			
 		}
 	</dl>
-	}
+	
+	<!-- Give the below an arbitrary number -->
+	<h2><a href="@controllers.routes.Deals.recommend(deals.size)">Ask the computer to recommend the best deals</a></h2>
+
+		
+	
+}

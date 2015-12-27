@@ -17,7 +17,10 @@
 			<dd><a href="@controllers.routes.Suppliers.toggle(supplier.id)">Toggle automatic contact</a></dd>
 			}
 	</dl>
+	<!-- We give the below href an arbitrary number so that it can put it in the route -->
+	<h2><a href="@controllers.routes.Suppliers.autoContact(suppliers.head.id)">Contact suppliers</a></h2>
 	
+	<h2>Find suppliers by item:</h2>
 	@helper.form(action = routes.Suppliers.findByProduct()) {
 		<fieldset>
 			@helper.inputText(productForm("ean"))
