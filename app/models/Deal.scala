@@ -1,7 +1,10 @@
 package models
 
+import java.util.Date
+
 case class Deal(id: Long, companyId: Long, products: Set[ProductPart] ) {
 var recommended = false
+var accepted = false
 }
 
 object Deal {
@@ -143,6 +146,45 @@ object Deal {
     }
   }
   
+  def toggleAccepted (id: Long) {
+    var deal = findById(id).get
+    deal.accepted = !deal.accepted
+  }
+  
+  /**
+   * Returns a list of deals which have been toggled as accepted
+   */
+  def findByAccepted : List[Deal] = {
+    var acceptedDeals = Set.empty[Deal]
+    for (deal <- findAll){
+      if (deal.accepted){
+        acceptedDeals += deal
+      }
+    }
+    acceptedDeals.toList
+  }
+  
+  def createPO {
+    var acceptedDeals = findByAccepted
+    var checkedCompanyIds = Set.empty[Long]
+    for (deal <- acceptedDeals){
+      if (checkedCompanyIds.contains(deal.companyId)==false){
+        checkedCompanyIds += deal.companyId
+        var POdeals = Set.empty[Deal]
+        POdeals += deal
+        for (otherDeal <- acceptedDeals) {
+          if (otherDeal.companyId == deal.companyId) {
+            POdeals += otherDeal
+          }
+        }
+        var d = new Date().getTime()/1000
+        d.toInt
+        var id = deal.companyId.toString + d.toString //creates an id by concatenating the company Id and date
+        PurchaseOrder.addPO(new PurchaseOrder(id.toLong, deal.companyId, POdeals.toList, d))
+      }
+    }
+    
+  }
   
   
   

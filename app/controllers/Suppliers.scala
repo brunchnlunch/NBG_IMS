@@ -31,12 +31,13 @@ class Suppliers extends Controller {
 	val newProductForm = productForm.bindFromRequest()
 	newProductForm.fold(
 		hasErrors = { form =>
-			Redirect(routes.Suppliers.supplierList())
+		  val message = "Incorrent EAN number! Please try again."
+			Redirect(routes.Suppliers.supplierList()).flashing("error" -> message)
 		},
 		success = { newProduct =>
-		  //make a new route and has it the productPart argument
 			val productSuppliers = Supplier.findByProduct(newProductForm.get.ean)
-		  Ok(views.html.supplierList(productSuppliers, productForm))
+			val message2 = "It worked!"  //can't display message?
+		  Ok(views.html.supplierList(productSuppliers, productForm)).flashing("success" -> message2)
 		}
 	)
   }

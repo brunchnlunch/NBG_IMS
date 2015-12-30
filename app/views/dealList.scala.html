@@ -7,6 +7,7 @@
 	<dl class ="deals">
 		@for(deal <- deals) {
 			<dt><a href="@controllers.routes.Deals.show(deal.id)">Deal id: @deal.id</a></dt>
+			<dd><a href="@controllers.routes.Deals.toggle(deal.id)">Toggle selected: @deal.accepted</a></dd>
 			<dd>Company name: @Supplier.findById(deal.companyId).get.company</dd>
 			<dd>Recommended: @deal.recommended</dd>
 			<div>
@@ -21,6 +22,8 @@
 	
 	<!-- Give the below an arbitrary number -->
 	<h2><a href="@controllers.routes.Deals.recommend(deals.size)">Ask the computer to recommend the best deals</a></h2>
+	
+	<h2><a href="@controllers.routes.PurchaseOrders.addPO(deals.size)">Create purchase order templates from chosen deals</a></h2>
 
 		
 	

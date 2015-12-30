@@ -16,6 +16,12 @@ GET     /Deals/:id                  controllers.Deals.show(id: Long)
 GET     /Deals/a/:number            controllers.Suppliers.autoContact(number: Long)
 #Again, why does the above work?
 GET     /Deals/b/:number            controllers.Deals.recommend(number: Long)
+GET     /Deals/c/:id                controllers.Deals.toggle(id: Long)
+GET     /PurchaseOrders             controllers.PurchaseOrders.POList
+GET     /PurchaseOrders/:id         controllers.PurchaseOrders.show(id: Long)
+GET     /PurchaseOrders/a/:number   controllers.PurchaseOrders.addPO(number : Long)
+
+
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

@@ -1,0 +1,25 @@
+@(PO: PurchaseOrder, productList : Map[Long, List[Double]])(implicit flash: Flash, lang: Lang)
+@import play.api.Play.current
+@import play.api.i18n.Messages.Implicits._
+@import models.Product
+@import models.Supplier
+@main("Purchase Order") {
+	<h2>Purchase Order Id: @PO.id</h2>
+	<h2>Company Id: @PO.companyId</h2>
+	<h2>Company: @Supplier.findById(PO.companyId).get.company</h2>
+	<h2>Date order placed: @PO.date</h2>
+	<h2>Deals:</h2>
+	@for(deal <- PO.deals){
+		<dt>Deal id: @deal.id</dt>
+		<dd>Quantity: @PO.quantities(deal.id)</dd>
+	}
+	<h2>Products ordered:</h2>
+	@for(productEan <- productList.keys){
+		<dt>EAN: @productEan</dt>
+		<dd>Product name: @Product.findByEan(productEan).get.name</dd>
+		<dd>Quantity: @productList(productEan)(0).toInt</dd>
+		<dd>Price per item: @productList(productEan)(1)</dd>
+	}
+	
+	
+}

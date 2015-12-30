@@ -1,0 +1,14 @@
+@(purchaseOrders: List[PurchaseOrder])(implicit flash: Flash, lang: Lang)
+@import play.api.Play.current
+@import play.api.i18n.Messages
+@import play.api.i18n.Messages.Implicits._
+@main(Messages("application.name")) {
+	
+<h2>Purchase Orders</h2>
+@for(PO <- purchaseOrders) {
+	<dt><a href="@controllers.routes.PurchaseOrders.show(PO.id)">ID: @PO.id</a></dt>
+	<dd>Date: @PO.date</dd>
+	}
+
+	
+}

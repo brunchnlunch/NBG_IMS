@@ -5,6 +5,20 @@
 @import helper._
 @import play.api.mvc.Flash
 @main(Messages("application.name")) {
+	
+	<div class="container">   
+			@if(flash.get("success").isDefined){
+				<div class="alert alert-success">
+					@flash.get("success")
+				</div>
+			}
+			@if(flash.get("error").isDefined){
+				<div class="alert alert-error">
+					@flash.get("error")
+				</div>
+			}
+	</div>
+	
 	<h2>Supplier List</h2>
 	<dl>
 		@for(supplier <- suppliers){

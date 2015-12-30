@@ -1,4 +1,7 @@
-@(title: String)(content: Html)
+@(title: String)(content: Html)(implicit flash: Flash, lang: Lang)
+@import play.api.Play.current
+@import play.api.i18n.Messages.Implicits._
+@import play.api.mvc.Flash
 
 <!DOCTYPE html>
 
@@ -15,7 +18,8 @@
     	<a href="@routes.Products.requiredList()"><b>Required Products</b></a>
     	<a href="@routes.Suppliers.supplierList()"><b>Supplier List</b></a>
     	<a href="@routes.Deals.dealList()"><b>Deals</b></a>
-    
+    	<a href="@routes.PurchaseOrders.POList()"><b>Purchase Orders</b></a>
+    	
     
         @content
     </body>
