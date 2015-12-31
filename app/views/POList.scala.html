@@ -1,4 +1,4 @@
-@(purchaseOrders: List[PurchaseOrder])(implicit flash: Flash, lang: Lang)
+@(purchaseOrders: List[PurchaseOrder], dealForm : Form[DealPartForm])(implicit flash: Flash, lang: Lang)
 @import play.api.Play.current
 @import play.api.i18n.Messages
 @import play.api.i18n.Messages.Implicits._
@@ -8,6 +8,16 @@
 @for(PO <- purchaseOrders) {
 	<dt><a href="@controllers.routes.PurchaseOrders.show(PO.id)">ID: @PO.id</a></dt>
 	<dd>Date: @PO.date</dd>
+	}
+	
+<h2>Increase quantity of a deal</h2>
+	@helper.form(action = routes.PurchaseOrders.dealQuantity()) {
+		<fieldset>
+			@helper.inputText(dealForm("id"))
+			@helper.inputText(dealForm("quantity"))
+		</fieldset>
+		<p style="padding-bottom:70px"><input type="submit" class="btn primary" value='@Messages("products.damaged.submit")'></p>
+		
 	}
 
 	

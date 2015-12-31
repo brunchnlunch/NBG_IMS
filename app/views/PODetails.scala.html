@@ -3,6 +3,7 @@
 @import play.api.i18n.Messages.Implicits._
 @import models.Product
 @import models.Supplier
+@import models.PurchaseOrder
 @main("Purchase Order") {
 	<h2>Purchase Order Id: @PO.id</h2>
 	<h2>Company Id: @PO.companyId</h2>
@@ -20,6 +21,7 @@
 		<dd>Quantity: @productList(productEan)(0).toInt</dd>
 		<dd>Price per item: @productList(productEan)(1)</dd>
 	}
+	<h2>Total cost: £@PurchaseOrder.total(PO.id)</h2>
 	
 	
 }

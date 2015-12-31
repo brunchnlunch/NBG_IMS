@@ -15,6 +15,7 @@ case class PurchaseOrder (id: Long, companyId: Long, deals : List[Deal], date: L
     }
     Dic
   }
+  
 
 
 
@@ -67,6 +68,22 @@ object PurchaseOrder {
     productList    
   }
   
+  def total (id : Long) : Double = {
+    var PO = findById(id).get
+    var total : Double = 0
+    for(deal <- PO.deals){
+      for(product <- deal.products){
+        var totalPriceOfProduct = product.price * PO.quantities(deal.id)
+        total += totalPriceOfProduct
+      }
+    }
+    total
+  }
+  
+  def dealQuantity (id: Long, quantity: Long) {
+    var PO = findByDealId(id)
+    PO.quantities(id) = quantity
+  }
   
   
   

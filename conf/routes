@@ -20,6 +20,7 @@ GET     /Deals/c/:id                controllers.Deals.toggle(id: Long)
 GET     /PurchaseOrders             controllers.PurchaseOrders.POList
 GET     /PurchaseOrders/:id         controllers.PurchaseOrders.show(id: Long)
 GET     /PurchaseOrders/a/:number   controllers.PurchaseOrders.addPO(number : Long)
+POST    /PurchaseOrders             controllers.PurchaseOrders.dealQuantity
 
 
 
