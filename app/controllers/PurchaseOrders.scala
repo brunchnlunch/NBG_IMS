@@ -42,9 +42,7 @@ class PurchaseOrders extends Controller {
 		},
 		success = { newDealPart =>
 		  PurchaseOrder.dealQuantity(newDealPart.id, newDealPart.quantity)		  
-			//val productSuppliers = Supplier.findByProduct(newProductForm.get.ean)
 		  Redirect(routes.PurchaseOrders.show(PurchaseOrder.findByDealId(newDealPart.id).id))
-			//Ok(views.html.supplierList(productSuppliers, productForm))
 		}
 	)
   }

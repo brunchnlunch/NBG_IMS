@@ -1,5 +1,5 @@
-New log file opened at Wed Dec 30 10:15:05 GMT 2015 by 580@FoxyOrange
-jvm 580@FoxyOrange
+New log file opened at Thu Dec 31 11:34:22 GMT 2015 by 3408@FoxyOrange
+jvm 3408@FoxyOrange
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.65-b01
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\charl\.sbt\0.13\plugins, returning: (global-plugins)
 Loading global plugins from C:\Users\charl\.sbt\0.13\plugins
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@2f5079c3, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@e3d284c, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -62,7 +62,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbteclipse.plugin.EclipsePlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\charl\workspace\NBG_IMS\project, returning: (nbg_ims-build)
 Loading project definition from C:\Users\charl\workspace\NBG_IMS\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@2f5079c3, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@e3d284c, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -104,7 +104,7 @@ Set current project to NBG_IMS (in build file:/C:/Users/charl/workspace/NBG_IMS/
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@100c4b3e, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@7729abbb, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -121,12 +121,12 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 6 s, completed 30-Dec-2015 10:15:51
+Total time: 5 s, completed 31-Dec-2015 11:34:59
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/charl/workspace/NBG_IMS/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@6c87f403, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@6f07cb7a, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -143,36 +143,58 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 2 s, completed 30-Dec-2015 10:15:54
+Total time: 2 s, completed 31-Dec-2015 11:35:01
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/charl/workspace/NBG_IMS/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@1d196ced, check cycles: false
-Total time: 0 s, completed 30-Dec-2015 10:15:54
+Running task... Cancel: sbt.server.ServerTaskCancellation@241cd04e, check cycles: false
+Total time: 0 s, completed 31-Dec-2015 11:35:01
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/charl/workspace/NBG_IMS/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@38d5266c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed 31-Dec-2015 11:35:02
 > server-post-command-cleanup
 > server-handle-next-server-request
 > backgroundRun
 Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@6f1069c1, check cycles: false
-Total time: 1 s, completed 30-Dec-2015 10:16:00
+Running task... Cancel: sbt.server.ServerTaskCancellation@1be61abe, check cycles: false
+Total time: 0 s, completed 31-Dec-2015 11:35:05
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/charl/workspace/NBG_IMS/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@156ddd99, check cycles: false
-Total time: 1 s, completed 30-Dec-2015 10:16:13
+Running task... Cancel: sbt.server.ServerTaskCancellation@3c19ba39, check cycles: false
+Total time: 1 s, completed 31-Dec-2015 11:35:20
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@7fcb1131, check cycles: false
-Total time: 0 s, completed 30-Dec-2015 10:16:18
+Running task... Cancel: sbt.server.ServerTaskCancellation@1f656dfb, check cycles: false
+Total time: 0 s, completed 31-Dec-2015 11:35:27
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/charl/workspace/NBG_IMS/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@5640b3f8, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@7ffd1cc8, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -195,117 +217,160 @@ Copy resource mappings:
 	(C:\Users\charl\workspace\NBG_IMS\conf\messages,C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes\messages)
 	(C:\Users\charl\workspace\NBG_IMS\conf\routes,C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes\routes)
 Warning: node.js detection failed, sbt will use the Rhino based Trireme JavaScript engine instead to run JavaScript assets compilation, which in some cases may be orders of magnitude slower than using node.js.
-Total time: 4 s, completed 30-Dec-2015 10:16:24
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@2e6c9c7e, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\charl\workspace\NBG_IMS\app\models\PurchaseOrder.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\app\models\PurchaseOrder.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\app\models\PurchaseOrder.scala)
-
-Read from stdout: Compiling 1 Scala source to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
-Compiling 1 Scala source to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Running cached compiler 2b6f84e4, interfacing (CompilerInterface) with Scala compiler version 2.11.6
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	C:\Program Files\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_65\jre\classes;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
-	-classpath
-	C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes;C:\Users\charl\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\charl\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\charl\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\charl\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.6.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\charl\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\charl\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\charl\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\charl\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\charl\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\charl\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\charl\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\charl\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\charl\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\charl\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\charl\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\charl\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\charl\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
-Scala compilation took 28.621804532 s
-Invalidating C:\Users\charl\workspace\NBG_IMS\app\models\PurchaseOrder.scala...
-Invalidating (transitively) by inheritance from C:\Users\charl\workspace\NBG_IMS\app\models\PurchaseOrder.scala...
-Initial set of included nodes: Set(C:\Users\charl\workspace\NBG_IMS\app\models\PurchaseOrder.scala)
-Invalidated by transitive inheritance dependency: Set(C:\Users\charl\workspace\NBG_IMS\app\models\PurchaseOrder.scala)
-The C:\Users\charl\workspace\NBG_IMS\app\models\PurchaseOrder.scala source file has the following regular definitions changed:
-	total.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in C:\Users\charl\workspace\NBG_IMS\app\models\Deal.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\PODetails.template.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in C:\Users\charl\workspace\NBG_IMS\app\controllers\PurchaseOrders.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\POList.template.scala. This dependency is not being considered for invalidation.
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 38 s, completed 30-Dec-2015 10:36:06
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@13cd9977, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\PODetails.template.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\PODetails.template.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\PODetails.template.scala)
-
-Read from stdout: Compiling 1 Scala source to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
-Compiling 1 Scala source to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.6
-Other repositories:
-Default repositories:
-Running cached compiler 43ac6ca8, interfacing (CompilerInterface) with Scala compiler version 2.11.6
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	C:\Program Files\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_65\jre\classes;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
-	-classpath
-	C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes;C:\Users\charl\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\charl\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\charl\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\charl\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.6.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\charl\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\charl\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\charl\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\charl\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\charl\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\charl\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\charl\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\charl\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\charl\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\charl\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\charl\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\charl\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\charl\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
-Scala compilation took 5.048555069 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 14 s, completed 30-Dec-2015 10:37:21
+Total time: 4 s, completed 31-Dec-2015 11:35:31
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/charl/workspace/NBG_IMS/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@5f46aaa0, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@4043ec67, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\POList.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\POList.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\POList.template.scala)
+
+Read from stdout: Compiling 1 Scala source to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 6c129aa5, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_65\jre\classes;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes;C:\Users\charl\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\charl\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\charl\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\charl\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.6.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\charl\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\charl\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\charl\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\charl\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\charl\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\charl\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\charl\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\charl\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\charl\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\charl\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\charl\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\charl\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\charl\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
+Scala compilation took 29.791743941 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(C:\Users\charl\workspace\NBG_IMS\conf\application.conf,C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes\application.conf)
+	(C:\Users\charl\workspace\NBG_IMS\conf\logback.xml,C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes\logback.xml)
+	(C:\Users\charl\workspace\NBG_IMS\conf\messages,C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes\messages)
+	(C:\Users\charl\workspace\NBG_IMS\conf\routes,C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes\routes)
+Total time: 41 s, completed 31-Dec-2015 11:39:38
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/charl/workspace/NBG_IMS/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@47f2f7cf, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\POList.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\POList.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\POList.template.scala)
+
+Read from stdout: Compiling 1 Scala source to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 705e76cc, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_65\jre\classes;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes;C:\Users\charl\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\charl\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\charl\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\charl\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.6.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\charl\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\charl\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\charl\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\charl\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\charl\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\charl\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\charl\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\charl\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\charl\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\charl\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\charl\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\charl\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\charl\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\views\POList.scala.html:8: value empty is not a member of List[models.PurchaseOrder]
+C:\Users\charl\workspace\NBG_IMS\app\views\POList.scala.html:8: value empty is not a member of List[models.PurchaseOrder]
+Read from stdout: @if(purchaseOrders.empty){
+@if(purchaseOrders.empty){
+Read from stdout: ^
+                   ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Total time: 17 s, completed 31-Dec-2015 11:41:35
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@6a6f65c3, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\POList.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\POList.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\POList.template.scala)
+
+Read from stdout: Compiling 1 Scala source to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 78301115, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_65\jre\classes;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes;C:\Users\charl\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\charl\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\charl\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\charl\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.6.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\charl\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\charl\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\charl\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\charl\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\charl\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\charl\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\charl\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\charl\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\charl\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\charl\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\charl\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\charl\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\charl\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
+Scala compilation took 6.614072391 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 12 s, completed 31-Dec-2015 11:43:34
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/charl/workspace/NBG_IMS/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@1881da5a, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -327,37 +392,37 @@ Copy resource mappings:
 	(C:\Users\charl\workspace\NBG_IMS\conf\logback.xml,C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes\logback.xml)
 	(C:\Users\charl\workspace\NBG_IMS\conf\messages,C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes\messages)
 	(C:\Users\charl\workspace\NBG_IMS\conf\routes,C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes\routes)
-Total time: 5 s, completed 30-Dec-2015 10:37:35
+Total time: 2 s, completed 31-Dec-2015 11:44:07
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@4c1908b3, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@4df19778, check cycles: false
 
 Initial source changes: 
 	removed:Set()
-	added: Set(C:\Users\charl\workspace\NBG_IMS\app\models\DealPartForm.scala)
-	modified: Set()
+	added: Set()
+	modified: Set(C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\app\models\DealPartForm.scala)
+Initial directly invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\app\models\DealPartForm.scala)
+All initially invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala)
 
-Read from stdout: Compiling 1 Scala source to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
-Compiling 1 Scala source to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
+Read from stdout: Compiling 2 Scala sources to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
+Compiling 2 Scala sources to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
 Getting compiler-interface from component compiler for Scala 2.11.6
 Other repositories:
 Default repositories:
 Getting compiler-interface from component compiler for Scala 2.11.6
 Other repositories:
 Default repositories:
-Running cached compiler 33a01a80, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Running cached compiler 104ab5f4, interfacing (CompilerInterface) with Scala compiler version 2.11.6
 Calling Scala compiler with arguments  (CompilerInterface):
 	-deprecation
 	-unchecked
@@ -367,93 +432,526 @@ Calling Scala compiler with arguments  (CompilerInterface):
 	C:\Program Files\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_65\jre\classes;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
 	-classpath
 	C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes;C:\Users\charl\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\charl\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\charl\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\charl\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.6.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\charl\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\charl\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\charl\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\charl\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\charl\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\charl\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\charl\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\charl\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\charl\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\charl\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\charl\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\charl\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\charl\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
-Scala compilation took 4.587486239 s
-Invalidating C:\Users\charl\workspace\NBG_IMS\app\models\DealPartForm.scala...
-Invalidating (transitively) by inheritance from C:\Users\charl\workspace\NBG_IMS\app\models\DealPartForm.scala...
-Initial set of included nodes: Set(C:\Users\charl\workspace\NBG_IMS\app\models\DealPartForm.scala)
-Invalidated by transitive inheritance dependency: Set(C:\Users\charl\workspace\NBG_IMS\app\models\DealPartForm.scala)
-The C:\Users\charl\workspace\NBG_IMS\app\models\DealPartForm.scala source file has the following regular definitions changed:
-	.
-All member reference dependencies will be considered within this context.
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 9 s, completed 30-Dec-2015 10:44:02
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:57: not found: value view
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:57: not found: value view
+Read from stdout: Ok(view.html.addDeal)
+      Ok(view.html.addDeal)
+Read from stdout: ^
+         ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\views\main.scala.html:20: value showAddDeal is not a member of controllers.ReverseDeals
+C:\Users\charl\workspace\NBG_IMS\app\views\main.scala.html:20: value showAddDeal is not a member of controllers.ReverseDeals
+Read from stdout: 	<a href="@routes.Deals.showAddDeal()"><b>Add Deals</b></a>
+    	<a href="@routes.Deals.showAddDeal()"><b>Add Deals</b></a>
+Read from stdout: 	                       ^
+    	                       ^
+Read from stdout: two errors found
+two errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 23 s, completed 31-Dec-2015 11:49:21
+> server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@25514f86, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@14de29ee, check cycles: false
 
 Initial source changes: 
 	removed:Set()
-	added: Set()
-	modified: Set()
+	added: Set(C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\addDeal.template.scala)
+	modified: Set(C:\Users\charl\workspace\NBG_IMS\app\controllers\PurchaseOrders.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
+Initial directly invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\app\controllers\PurchaseOrders.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\addDeal.template.scala)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set()
+All initially invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\app\controllers\PurchaseOrders.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\addDeal.template.scala)
 
-Total time: 2 s, completed 30-Dec-2015 10:44:05
+Read from stdout: Compiling 4 Scala sources to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
+Compiling 4 Scala sources to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 26b47b38, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_65\jre\classes;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes;C:\Users\charl\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\charl\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\charl\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\charl\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.6.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\charl\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\charl\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\charl\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\charl\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\charl\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\charl\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\charl\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\charl\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\charl\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\charl\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\charl\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\charl\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\charl\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:29: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:29: expected class or object definition
+Read from stdout: def dealList = Action {
+  def dealList = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:35: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:35: expected class or object definition
+Read from stdout: def show(id: Long) = Action {
+  def show(id: Long) = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:42: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:42: expected class or object definition
+Read from stdout: def recommend(number : Long) = Action {
+  def recommend(number : Long) = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:48: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:48: expected class or object definition
+Read from stdout: def toggle(id : Long) = Action {
+  def toggle(id : Long) = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:54: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:54: expected class or object definition
+Read from stdout: def showAddDeal() = Action {
+  def showAddDeal() = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:66: Unmatched closing brace '}' ignored here
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:66: Unmatched closing brace '}' ignored here
+Read from stdout: }
+}
+Read from stdout: ^
+^
+Read from stdout: 6 errors found
+6 errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 3 s, completed 31-Dec-2015 11:54:06
+> server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@2898db89, check cycles: false
+> {file:/C:/Users/charl/workspace/NBG_IMS/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@3daa616b, check cycles: false
 
 Initial source changes: 
 	removed:Set()
-	added: Set()
-	modified: Set()
+	added: Set(C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\addDeal.template.scala)
+	modified: Set(C:\Users\charl\workspace\NBG_IMS\app\controllers\PurchaseOrders.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
+Initial directly invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\app\controllers\PurchaseOrders.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\addDeal.template.scala)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set()
+All initially invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\app\controllers\PurchaseOrders.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\addDeal.template.scala)
 
-Total time: 1 s, completed 30-Dec-2015 10:44:05
+Read from stdout: Compiling 4 Scala sources to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
+Compiling 4 Scala sources to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 2ad121bb, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_65\jre\classes;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes;C:\Users\charl\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\charl\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\charl\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\charl\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.6.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\charl\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\charl\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\charl\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\charl\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\charl\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\charl\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\charl\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\charl\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\charl\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\charl\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\charl\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\charl\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\charl\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:29: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:29: expected class or object definition
+Read from stdout: def dealList = Action {
+  def dealList = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:35: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:35: expected class or object definition
+Read from stdout: def show(id: Long) = Action {
+  def show(id: Long) = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:42: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:42: expected class or object definition
+Read from stdout: def recommend(number : Long) = Action {
+  def recommend(number : Long) = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:48: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:48: expected class or object definition
+Read from stdout: def toggle(id : Long) = Action {
+  def toggle(id : Long) = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:54: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:54: expected class or object definition
+Read from stdout: def showAddDeal() = Action {
+  def showAddDeal() = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:66: Unmatched closing brace '}' ignored here
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:66: Unmatched closing brace '}' ignored here
+Read from stdout: }
+}
+Read from stdout: ^
+^
+Read from stdout: 6 errors found
+6 errors found
+Compilation failed (CompilerInterface)
+Total time: 16 s, completed 31-Dec-2015 11:54:39
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@467e44f, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\addDeal.template.scala)
+	modified: Set(C:\Users\charl\workspace\NBG_IMS\app\controllers\PurchaseOrders.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\routes.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\app\controllers\PurchaseOrders.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\addDeal.template.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\routes.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\app\controllers\PurchaseOrders.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\addDeal.template.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\routes.java)
+
+Read from stdout: Compiling 8 Scala sources and 1 Java source to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
+Compiling 8 Scala sources and 1 Java source to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 6f12a952, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_65\jre\classes;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes;C:\Users\charl\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\charl\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\charl\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\charl\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.6.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\charl\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\charl\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\charl\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\charl\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\charl\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\charl\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\charl\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\charl\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\charl\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\charl\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\charl\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\charl\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\charl\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:29: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:29: expected class or object definition
+Read from stdout: def dealList = Action {
+  def dealList = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:35: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:35: expected class or object definition
+Read from stdout: def show(id: Long) = Action {
+  def show(id: Long) = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:42: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:42: expected class or object definition
+Read from stdout: def recommend(number : Long) = Action {
+  def recommend(number : Long) = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:48: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:48: expected class or object definition
+Read from stdout: def toggle(id : Long) = Action {
+  def toggle(id : Long) = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:54: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:54: expected class or object definition
+Read from stdout: def showAddDeal() = Action {
+  def showAddDeal() = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:66: Unmatched closing brace '}' ignored here
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:66: Unmatched closing brace '}' ignored here
+Read from stdout: }
+}
+Read from stdout: ^
+^
+Read from stdout: 6 errors found
+6 errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 5 s, completed 31-Dec-2015 11:57:37
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@7ff2f210, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\addDeal.template.scala)
+	modified: Set(C:\Users\charl\workspace\NBG_IMS\app\controllers\PurchaseOrders.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\routes.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\app\controllers\PurchaseOrders.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\addDeal.template.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\routes.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\app\controllers\PurchaseOrders.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\addDeal.template.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\routes.java)
+
+Read from stdout: Compiling 8 Scala sources and 1 Java source to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
+Compiling 8 Scala sources and 1 Java source to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 3c8744a4, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_65\jre\classes;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes;C:\Users\charl\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\charl\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\charl\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\charl\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.6.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\charl\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\charl\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\charl\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\charl\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\charl\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\charl\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\charl\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\charl\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\charl\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\charl\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\charl\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\charl\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\charl\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:29: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:29: expected class or object definition
+Read from stdout: def dealList = Action {
+  def dealList = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:35: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:35: expected class or object definition
+Read from stdout: def show(id: Long) = Action {
+  def show(id: Long) = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:42: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:42: expected class or object definition
+Read from stdout: def recommend(number : Long) = Action {
+  def recommend(number : Long) = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:48: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:48: expected class or object definition
+Read from stdout: def toggle(id : Long) = Action {
+  def toggle(id : Long) = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:54: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:54: expected class or object definition
+Read from stdout: def showAddDeal() = Action {
+  def showAddDeal() = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:66: Unmatched closing brace '}' ignored here
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:66: Unmatched closing brace '}' ignored here
+Read from stdout: }
+}
+Read from stdout: ^
+^
+Read from stdout: 6 errors found
+6 errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 2 s, completed 31-Dec-2015 11:57:48
+> server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/charl/workspace/NBG_IMS/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@11895970, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@410ed69, check cycles: false
 
 Initial source changes: 
 	removed:Set()
-	added: Set()
-	modified: Set()
+	added: Set(C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\addDeal.template.scala)
+	modified: Set(C:\Users\charl\workspace\NBG_IMS\app\controllers\PurchaseOrders.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\routes.java)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
+Initial directly invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\app\controllers\PurchaseOrders.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\addDeal.template.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\routes.java)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set()
+All initially invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\app\controllers\PurchaseOrders.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\addDeal.template.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\routes.java)
 
-Total time: 2 s, completed 30-Dec-2015 10:55:39
+Read from stdout: Compiling 8 Scala sources and 1 Java source to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
+Compiling 8 Scala sources and 1 Java source to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 17beae71, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_65\jre\classes;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes;C:\Users\charl\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\charl\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\charl\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\charl\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.6.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\charl\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\charl\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\charl\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\charl\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\charl\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\charl\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\charl\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\charl\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\charl\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\charl\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\charl\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\charl\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\charl\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:29: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:29: expected class or object definition
+Read from stdout: def dealList = Action {
+  def dealList = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:35: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:35: expected class or object definition
+Read from stdout: def show(id: Long) = Action {
+  def show(id: Long) = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:42: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:42: expected class or object definition
+Read from stdout: def recommend(number : Long) = Action {
+  def recommend(number : Long) = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:48: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:48: expected class or object definition
+Read from stdout: def toggle(id : Long) = Action {
+  def toggle(id : Long) = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:54: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:54: expected class or object definition
+Read from stdout: def showAddDeal() = Action {
+  def showAddDeal() = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:66: Unmatched closing brace '}' ignored here
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:66: Unmatched closing brace '}' ignored here
+Read from stdout: }
+}
+Read from stdout: ^
+^
+Read from stdout: 6 errors found
+6 errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 2 s, completed 31-Dec-2015 11:58:07
+> server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/charl/workspace/NBG_IMS/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@1cf21f0d, check cycles: false
-Total time: 0 s, completed 30-Dec-2015 10:55:39
+Running task... Cancel: sbt.server.ServerTaskCancellation@55324e2f, check cycles: false
+Total time: 0 s, completed 31-Dec-2015 11:58:07
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/charl/workspace/NBG_IMS/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@24966607, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\addDeal.template.scala)
+	modified: Set(C:\Users\charl\workspace\NBG_IMS\app\controllers\PurchaseOrders.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\routes.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\app\controllers\PurchaseOrders.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\addDeal.template.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\routes.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\charl\workspace\NBG_IMS\app\controllers\PurchaseOrders.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\twirl\main\views\html\addDeal.template.scala, C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\routes\main\controllers\routes.java)
+
+Read from stdout: Compiling 8 Scala sources and 1 Java source to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
+Compiling 8 Scala sources and 1 Java source to C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 3536054a, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jdk1.8.0_65\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_65\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_65\jre\classes;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\charl\workspace\NBG_IMS\target\scala-2.11\classes;C:\Users\charl\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\charl\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\charl\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\charl\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\charl\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.6.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.6.jar;C:\Users\charl\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\charl\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\charl\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\charl\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\charl\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\charl\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\charl\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\charl\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\charl\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\charl\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\charl\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\charl\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\charl\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\charl\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\charl\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\charl\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.6.jar;C:\Users\charl\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\charl\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\charl\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\charl\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:29: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:29: expected class or object definition
+Read from stdout: def dealList = Action {
+  def dealList = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:35: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:35: expected class or object definition
+Read from stdout: def show(id: Long) = Action {
+  def show(id: Long) = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:42: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:42: expected class or object definition
+Read from stdout: def recommend(number : Long) = Action {
+  def recommend(number : Long) = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:48: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:48: expected class or object definition
+Read from stdout: def toggle(id : Long) = Action {
+  def toggle(id : Long) = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:54: expected class or object definition
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:54: expected class or object definition
+Read from stdout: def showAddDeal() = Action {
+  def showAddDeal() = Action {
+Read from stdout: ^
+  ^
+Read from stdout: C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:66: Unmatched closing brace '}' ignored here
+C:\Users\charl\workspace\NBG_IMS\app\controllers\Deals.scala:66: Unmatched closing brace '}' ignored here
+Read from stdout: }
+}
+Read from stdout: ^
+^
+Read from stdout: 6 errors found
+6 errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 3 s, completed 31-Dec-2015 11:58:27
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/charl/workspace/NBG_IMS/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@572cf27, check cycles: false
+Total time: 0 s, completed 31-Dec-2015 11:58:27
 > server-post-command-cleanup
 > server-handle-next-server-request
 Done executing sbt server engine, result Right(Exit(0))
@@ -462,4 +960,4 @@ Waiting for socket thread
 Waiting for request processor thread
 Waiting for command engine result
 Returning control to sbt launcher with result Exit(0)
-Closing the 580@FoxyOrange logs at Wed Dec 30 10:55:40 GMT 2015, goodbye.
+Closing the 3408@FoxyOrange logs at Thu Dec 31 11:58:29 GMT 2015, goodbye.

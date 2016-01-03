@@ -25,7 +25,6 @@ class Deals extends Controller {
 //          )
 //          )(Deal.apply)(Deal.unapply)
 //          )
-
   
   def dealList = Action {
     implicit request =>
@@ -51,6 +50,7 @@ class Deals extends Controller {
       Deal.toggleAccepted(id)
       Redirect(routes.Deals.dealList())
   }
+  
   
 //  def purchaseOrder = Action {
 //    implicit request =>

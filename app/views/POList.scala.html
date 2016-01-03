@@ -5,9 +5,13 @@
 @main(Messages("application.name")) {
 	
 <h2>Purchase Orders</h2>
-@for(PO <- purchaseOrders) {
-	<dt><a href="@controllers.routes.PurchaseOrders.show(PO.id)">ID: @PO.id</a></dt>
-	<dd>Date: @PO.date</dd>
+@if(purchaseOrders.isEmpty){
+	no orders to display
+	}else{
+		@for(PO <- purchaseOrders) {
+			<dt><a href="@controllers.routes.PurchaseOrders.show(PO.id)">ID: @PO.id</a></dt>
+			<dd>Date: @PO.date</dd>
+			}
 	}
 	
 <h2>Increase quantity of a deal</h2>
@@ -16,7 +20,7 @@
 			@helper.inputText(dealForm("id"))
 			@helper.inputText(dealForm("quantity"))
 		</fieldset>
-		<p style="padding-bottom:70px"><input type="submit" class="btn primary" value='@Messages("products.damaged.submit")'></p>
+		<p style="padding-bottom:70px"><input type="submit" class="btn primary" value="submit"></p>
 		
 	}
 
