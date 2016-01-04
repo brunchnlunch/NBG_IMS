@@ -19,27 +19,47 @@
 			}
 	</div>
 	
-	<h2>Supplier List</h2>
-	<dl>
-		@for(supplier <- suppliers){
-			<dt><a href="@controllers.routes.Suppliers.show(supplier.id)">@supplier.company</a></dt>
-			<dd>Id: @supplier.id</dd>
-			<dd>Contact name: @supplier.contactName</dd>
-			<dd>Phone number: @supplier.phoneNumber</dd>
-			<dd>Email: @supplier.email</dd>
-			<dd>Automatically contact: @supplier.autoDeal</dd>
-			<dd><a href="@controllers.routes.Suppliers.toggle(supplier.id)">Toggle automatic contact</a></dd>
-			}
-	</dl>
-	<!-- We give the below href an arbitrary number so that it can put it in the route -->
-	<h2><a href="@controllers.routes.Suppliers.autoContact(suppliers.head.id)">Contact suppliers</a></h2>
+	<div class=page-title>
+		<h2>Supplier List</h2>
+	</div>
 	
-	<h2>Find suppliers by item:</h2>
+	<div class="list-container">
+		@for(supplier <- suppliers) {
+			<div class="list-item">
+				<a href="@controllers.routes.Suppliers.show(supplier.id)">
+					<ul>
+						<li>@supplier.company</li>
+						<li>Id: @supplier.id</li>
+						<li>Contact name: @supplier.contactName</li>
+						<li>Phone number: @supplier.phoneNumber</li>
+						<li>Email: @supplier.email</li>
+						<li>Automatically contact: @supplier.autoDeal</li>
+						<li class="toggle"><a href="@controllers.routes.Suppliers.toggle(supplier.id)">Toggle automatic contact</a></li>
+					</ul>
+				</a>
+			</div>
+		}
+	</div>
+	<div style="margin-left:350px">
+		<!-- We give the below href an arbitrary number so that it can put it in the route -->
+		<a href="@controllers.routes.Suppliers.autoContact(suppliers.head.id)"><button type="button" class="btn">Contact suppliers</button></a>
+	</div>
+	
+	<div class="page-title">
+		<h2>Find suppliers by item:</h2>
+	</div>
+	
 	@helper.form(action = routes.Suppliers.findByProduct()) {
-		<fieldset>
+		<fieldset style="margin-left:200px">
+		<legend>
 			@helper.inputText(productForm("ean"))
+		</legend>
 		</fieldset>
-		<p style="padding-bottom:70px"><input type="submit" class="btn primary" value='enter'></p>
+		<div>
+			<input type="submit" class="btn primary" value="Submit" style="margin-left:400px">
+		</div>
+		
+		
 	}	
 	
 }

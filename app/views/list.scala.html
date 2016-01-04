@@ -3,17 +3,28 @@
 @import play.api.i18n.Messages
 @import play.api.i18n.Messages.Implicits._
 @main(Messages("application.name")) {
-	<div>
+	<div id="stock-warning">
 		@if(stockRequired){
-			<h2>Stock is low!</h2>
+			<h2 class="warning">Stock is low!</h2>
 			} else {
-			<h2>No new stock required.</h2>
+			<h2 class="warning">No new stock required.</h2>
 			}
 	</div>
-	<h2>Product List</h2>
-	<dl class ="products">
+	<div class="page-title">
+		<h2>Product List</h2>
+	</div>
+	<div class="list-container">
 		@for(product <- products) {
-			<dt>@product.name</dt>
-		}
-	</dl>
+			<div class="list-item">
+				<a href="">
+					<ul>
+						<li>@product.name</li>
+						<li>Quantity: @product.quantity</li>
+						<li>Threshold: @product.threshold</li>
+					</ul>
+				</a>
+			</div>
+		}	
+	</div>
+	
 	}

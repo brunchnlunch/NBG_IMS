@@ -4,24 +4,45 @@
 @import play.api.i18n.Messages.Implicits._
 @main(Messages("application.name")) {
 	
-<h2>Purchase Orders</h2>
+<div class="page-title">
+	<h2>Purchase Orders</h2>
+</div>
+
+
 @if(purchaseOrders.isEmpty){
-	no orders to display
+	<div style="text-align:center;font-weight:bold;color:red">
+		No orders to display
+	</div>
 	}else{
+	<div class="list-container">
 		@for(PO <- purchaseOrders) {
-			<dt><a href="@controllers.routes.PurchaseOrders.show(PO.id)">ID: @PO.id</a></dt>
-			<dd>Date: @PO.date</dd>
+			<div class="list-item">
+				<a href="@controllers.routes.PurchaseOrders.show(PO.id)">
+					<ul>
+						<li>ID: @PO.id</li>
+						<li>Date: @PO.date</li>
+					</ul>
+				</a>
+			</div>
 			}
+	</div>
 	}
+
 	
-<h2>Increase quantity of a deal</h2>
+<div class="page-title">
+	<h2>Increase quantity of a deal</h2>
+</div>
+
 	@helper.form(action = routes.PurchaseOrders.dealQuantity()) {
-		<fieldset>
+		<fieldset style="margin-left:200px">
+		<legend>
 			@helper.inputText(dealForm("id"))
 			@helper.inputText(dealForm("quantity"))
+		</legend>
 		</fieldset>
-		<p style="padding-bottom:70px"><input type="submit" class="btn primary" value="submit"></p>
-		
+		<div style="padding-bottom:60px">
+			<input type="submit" class="btn primary" value="Submit" style="margin-left:400px">
+		</div>
 	}
 
 	

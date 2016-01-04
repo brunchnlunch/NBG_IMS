@@ -3,13 +3,21 @@
 @import play.api.i18n.Messages
 @import play.api.i18n.Messages.Implicits._
 @main(Messages("application.name")) {
-	<h2>Required Products</h2>
-	<dl>
-	@for(product <- products) {
-		<dt>@product.name</dt>
-		<dd>Minimum required: @Product.difference(product.ean)</dd>
-		<dd>Quantity: @product.quantity</dd>
-		<dd>Threshold: @product.threshold</dd>
-		}
-	</dl>
+	<div class="page-title">
+		<h2>Required Products</h2>
+	</div>
+	<div class="list-container">
+		@for(product <- products) {
+				<div class="list-item">
+				<a href="">
+					<ul>
+						<li>@product.name</li>
+						<li>Minimum required: @Product.difference(product.ean)</li>
+						<li>Quantity: @product.quantity</li>
+						<li>Threshold: @product.threshold</li>
+					</ul>
+				</a>
+				</div>
+			}
+	</div>
 }

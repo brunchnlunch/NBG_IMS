@@ -13,14 +13,22 @@
         <script src="@routes.Assets.versioned("javascripts/hello.js")" type="text/javascript"></script>
     </head>
     <body>
-    	nav bar here
-    	<a href="@routes.Products.list()"><b>Product list</b></a>
-    	<a href="@routes.Products.requiredList()"><b>Required Products</b></a>
-    	<a href="@routes.Suppliers.supplierList()"><b>Supplier List</b></a>
-    	<a href="@routes.Deals.dealList()"><b>Deals</b></a>
-    	<a href="@routes.PurchaseOrders.POList()"><b>Purchase Orders</b></a>
-    	
-    
-        @content
+	    <div id="container">
+	    	<div id="title">
+	    		<h2>@Messages("application.name")</h2>
+	    	</div>
+	    	<div id="navbar">
+		    	<ul>
+			    	<li><a href="@routes.Products.list()"><b>Product list</b></a></li>
+			    	<li><a href="@routes.Products.requiredList()"><b>Required Products</b></a></li>
+			    	<li><a href="@routes.Suppliers.supplierList()"><b>Supplier List</b></a></li>
+			    	<li><a href="@routes.Deals.dealList()"><b>Deals</b></a></li>
+			    	<li><a href="@routes.PurchaseOrders.POList()"><b>Purchase Orders</b></a></li>
+		    	</ul>
+	    	</div>
+	    	<div id="content">
+	        @content
+	        </div>
+        </div>
     </body>
 </html>

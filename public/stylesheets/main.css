@@ -1,0 +1,121 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/*
+	background-color: #D0E7EF; Gives everything on the page with colour
+	*/
+}
+#container {
+	background-color: #D0E7EF;
+	width:900px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#title {
+	text-align:center;
+	padding:10px;
+}
+#navbar ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #555;
+    overflow: hidden;
+}
+#navbar li {
+	float:left;
+}
+#navbar a {
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#navbar a:hover {
+	background-color: #111;
+}
+
+
+
+.page-title{
+	text-align:center;
+	padding-top: 15px;
+}
+#stock-warning{
+	margin:auto;
+	text-align:center;
+	background-color:#ff3333;
+	width: 300px;
+}
+.warning{
+	padding:10px;
+	color:#D0E7EF;
+}
+.toggle{
+	padding-top:15px;
+}
+a {
+	text-decoration: none;
+}
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #555;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+}
+.btn:hover {
+  background: #111;
+  text-decoration: none;
+}
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: inherit;
+  color: #333;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+
+
+.list-container{
+    overflow: hidden; /*This allows the background colour to continue.*/
+    margin:0 auto;
+    width: 900px;
+}
+.list-item {
+	float:left;
+	width: 300px;
+	text-align:center;
+}
+.list-item ul{
+	list-style-type:none;
+	margin-left:0px;
+	padding-left:0px;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+.list-container a {
+	display: block;
+    text-decoration: none;
+    color: black;
+}
+.list-container a:hover{
+	background-color: #66afe9;
+}
+

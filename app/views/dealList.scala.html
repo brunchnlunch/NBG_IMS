@@ -3,28 +3,44 @@
 @import play.api.i18n.Messages
 @import play.api.i18n.Messages.Implicits._
 @main(Messages("application.name")) {
-	<h2>Deals List</h2>
-	<dl class ="deals">
-		@for(deal <- deals) {
-			<dt><a href="@controllers.routes.Deals.show(deal.id)">Deal id: @deal.id</a></dt>
-			<dd><a href="@controllers.routes.Deals.toggle(deal.id)">Toggle selected: @deal.accepted</a></dd>
-			<dd>Company name: @Supplier.findById(deal.companyId).get.company</dd>
-			<dd>Recommended: @deal.recommended</dd>
-			<div>
-				@for(product <- deal.products){
-					<dt>@product.ean</dt>
-					<dd>price per item: @product.pricePerItem</dd>
-				}
-			</div>
-			
-		}
-	</dl>
+	<div class="page-title">
+		<h2>Deals List</h2>
+	</div>
 	
-	<!-- Give the below an arbitrary number -->
-	<h2><a href="@controllers.routes.Deals.recommend(deals.size)">Ask the computer to recommend the best deals</a></h2>
+	<div class="list-container">
+		@for(deal <- deals){
+				<div class="list-item" style="min-height:230px">
+					<a href="@controllers.routes.Deals.show(deal.id)">
+						<ul>
+							<li>Deal id: @deal.id</li>
+							<li>Company name: @Supplier.findById(deal.companyId).get.company</li>
+							@if(deal.recommended){
+								<li style="color:Green">Recommended: @deal.recommended</li>
+								}else{
+								<li>Recommended: @deal.recommended</li>
+								}
+							<li>Including items:</li>
+							@for(product <- deal.products) {
+									<li>@product.ean</li>
+								}
+							<li class="toggle"><a href="@controllers.routes.Deals.toggle(deal.id)">Toggle selected: @deal.accepted</a></li>
+						</ul>
+					</a>
+				</div>
+			}
+	</div>
 	
-	<h2><a href="@controllers.routes.PurchaseOrders.addPO(deals.size)">Create purchase order templates from chosen deals</a></h2>
-
+	
+	<!-- We give the below href an arbitrary number so that it can put it in the route -->
+	<div style="margin-left:220px">
+		<a href="@controllers.routes.Deals.recommend(deals.size)"><button type="button" class="btn">Ask the computer to recommend the best deals</button></a>
+	</div>
+	
+	<div style="margin-left:200px; padding-top:20px; padding-bottom:60px">
+		<a href="@controllers.routes.PurchaseOrders.addPO(deals.size)"><button type="button" class="btn">Create purchase order templates from chosen deals</button></a>
+	</div>
+	
+	
 		
 	
 }
