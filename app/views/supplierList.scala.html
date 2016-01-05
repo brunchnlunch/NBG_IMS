@@ -33,7 +33,11 @@
 						<li>Contact name: @supplier.contactName</li>
 						<li>Phone number: @supplier.phoneNumber</li>
 						<li>Email: @supplier.email</li>
-						<li>Automatically contact: @supplier.autoDeal</li>
+						@if(supplier.autoDeal){
+							<li style="color:Green">Automatically contact: @supplier.autoDeal</li>
+							}else{
+							<li style="color:#ff3333">Automatically contact: @supplier.autoDeal</li>
+							}
 						<li class="toggle"><a href="@controllers.routes.Suppliers.toggle(supplier.id)">Toggle automatic contact</a></li>
 					</ul>
 				</a>
@@ -55,7 +59,7 @@
 			@helper.inputText(productForm("ean"))
 		</legend>
 		</fieldset>
-		<div>
+		<div style="padding-bottom:60px">
 			<input type="submit" class="btn primary" value="Submit" style="margin-left:400px">
 		</div>
 		

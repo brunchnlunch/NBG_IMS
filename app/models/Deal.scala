@@ -186,6 +186,8 @@ object Deal {
     
   }
   
+  //INCREASE PRODUCT QUANTITY WHEN ADDING PO????
+  
   
   
 }

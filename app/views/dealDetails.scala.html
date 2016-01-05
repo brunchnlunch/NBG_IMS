@@ -3,15 +3,39 @@
 @import play.api.i18n.Messages
 @import play.api.i18n.Messages.Implicits._
 @main(Messages("application.name")) {
-	<dt>Deal id: @deal.id</dt>
-	<dt>Company id: @deal.companyId</dt>
-	<dt>Company name: @Supplier.findById(deal.companyId).get.company</dt>
-	<div>
+	
+	<div class="page-title">
+		<h2>
+			Deal id: @deal.id
+		</h2>
+	</div>
+	
+	<div class=details-container>
+		<ul>
+			<li>Company id: @deal.companyId</li>
+			<li>Company name: @Supplier.findById(deal.companyId).get.company</li>
+		</ul>
+	</div>
+	
+	<div class="page-title">
+		Products:
+	</div>
+	
+	<div class="list-container">
 		@for(product <- deal.products){
-			<dt>@product.ean</dt>
-			<dd>quantity: @product.quantity</dd>
-			<dd>price: @product.price</dd>
-			<dd>price per item: @product.pricePerItem</dd>
+				<div class="list-item" style="min-height:230px">
+					<a href="">
+						<ul>
+							<li>@Product.findByEan(product.ean).get.name</li>
+							<li>@product.ean</li>
+							<li>quantity: @product.quantity</li>
+							<li>price: @product.price</li>
+							<li>price per item: @product.pricePerItem</li>
+						</ul>
+					</a>
+				</div>
 		}
 	</div>
+	
+
 }

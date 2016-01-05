@@ -17,13 +17,17 @@
 							@if(deal.recommended){
 								<li style="color:Green">Recommended: @deal.recommended</li>
 								}else{
-								<li>Recommended: @deal.recommended</li>
+								<li style="color:#ff3333">Recommended: @deal.recommended</li>
 								}
 							<li>Including items:</li>
 							@for(product <- deal.products) {
 									<li>@product.ean</li>
 								}
-							<li class="toggle"><a href="@controllers.routes.Deals.toggle(deal.id)">Toggle selected: @deal.accepted</a></li>
+							@if(deal.accepted){
+								<li class="toggle"><a href="@controllers.routes.Deals.toggle(deal.id)" style="color:green">Toggle selected: @deal.accepted</a></li>
+								}else{
+								<li class="toggle"><a href="@controllers.routes.Deals.toggle(deal.id)" style="color:#ff3333">Toggle selected: @deal.accepted</a></li>
+								}
 						</ul>
 					</a>
 				</div>

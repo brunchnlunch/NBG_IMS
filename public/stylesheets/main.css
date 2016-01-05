@@ -119,3 +119,8 @@ legend {
 	background-color: #66afe9;
 }
 
+.details-container ul{
+	list-style-type: none;
+	margin-left:50px
+}
+

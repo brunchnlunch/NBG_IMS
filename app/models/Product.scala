@@ -58,7 +58,36 @@ object Product { //Each product has a quantity threshhold
     difference
   }
   
+  /**
+   * Increases the product with given ean by given amount.
+   */
+  def increaseQuantity (ean : Long, amount: Long) {
+    var newProductList = Set.empty[Product]
+    for(product <- products){
+      if(product.ean!=ean){
+        newProductList += product
+      }else{
+        var newQuantity = product.quantity + amount
+        newProductList += Product(ean, product.name, newQuantity, product.threshold )
+      }
+    }
+    products = newProductList
+  }
   
+  /**
+   * Increases quantity of products in a given PO.
+   */
+  def increaseQuantityByPo (PO: PurchaseOrder) {
+    for(deal <- PO.deals){
+      for(product <- deal.products){
+        var amount=PO.quantities(deal.id)*product.quantity
+        increaseQuantity(product.ean, amount)
+      }
+    }
+  }
+  
+//MAKE CONFIRM PO function WHICH CALLS IncreaseQuantityByPo
+
   
   
 }
