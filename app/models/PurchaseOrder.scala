@@ -88,6 +88,7 @@ object PurchaseOrder {
   def confirm (id:Long) {
     var PO = PurchaseOrder.findById(id).get
     var newPO = PurchaseOrder(id, PO.companyId, PO.deals, PO.date, true)
+    newPO.quantities = PO.quantities
     var newPOs = Set.empty[PurchaseOrder]
     for(po <- purchaseOrders){
       if(po.id == id){

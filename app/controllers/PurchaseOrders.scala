@@ -19,14 +19,14 @@ class PurchaseOrders extends Controller {
   def POList = Action {
     implicit request =>
       val POs = PurchaseOrder.findAll
-      Ok(views.html.POList(POs, dealForm))
+      Ok(views.html.POList(POs))
   }
   
   def show(id:Long) = Action {
     implicit request =>
       var PO = PurchaseOrder.findById(id).get
       var productList = PurchaseOrder.productList(id).toMap
-      Ok(views.html.PODetails(PO, productList))
+      Ok(views.html.PODetails(PO, productList, dealForm))
   }
   
   def addPO(number: Long) = Action {

@@ -1,4 +1,4 @@
-@(PO: PurchaseOrder, productList : Map[Long, List[Double]])(implicit flash: Flash, lang: Lang)
+@(PO: PurchaseOrder, productList : Map[Long, List[Double]], dealForm : Form[DealPartForm])(implicit flash: Flash, lang: Lang)
 @import play.api.Play.current
 @import play.api.i18n.Messages.Implicits._
 @import models.Product
@@ -58,6 +58,7 @@
 						<li>EAN: @productEan</li>
 						<li>Quantity: @productList(productEan)(0).toInt</li>
 						<li>Price per item: @productList(productEan)(1)</li>
+						<li Style="padding-top:10px">Minimum required: @Product.difference(productEan)</li>
 					</ul>
 				</a>
 			</div>
@@ -74,6 +75,24 @@
 				<a href="@controllers.routes.PurchaseOrders.confirm(PO.id)"><button type="button" class="btn">Confirm Purchse Order</button></a>
 			}
 	</div>
+	
+	@if(PO.confirmed!=true){
+		<div class="page-title">
+			<h2>Increase quantity of a deal</h2>
+		</div>
+	
+		@helper.form(action = routes.PurchaseOrders.dealQuantity()) {
+			<fieldset style="margin-left:200px">
+			<legend>
+				@helper.inputText(dealForm("id"))
+				@helper.inputText(dealForm("quantity"))
+			</legend>
+			</fieldset>
+			<div style="padding-bottom:60px">
+				<input type="submit" class="btn primary" value="Submit" style="margin-left:400px">
+			</div>
+		}
+	}
 	
 	
 }

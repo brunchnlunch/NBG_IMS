@@ -55,6 +55,9 @@ object Product { //Each product has a quantity threshhold
   def difference (ean: Long) : Long = {
     val product = Product.findByEan(ean).get
     var difference = product.threshold - product.quantity
+    if(difference<0){
+      difference=0
+    }
     difference
   }
   

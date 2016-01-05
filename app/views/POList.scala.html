@@ -1,4 +1,4 @@
-@(purchaseOrders: List[PurchaseOrder], dealForm : Form[DealPartForm])(implicit flash: Flash, lang: Lang)
+@(purchaseOrders: List[PurchaseOrder])(implicit flash: Flash, lang: Lang)
 @import play.api.Play.current
 @import play.api.i18n.Messages
 @import play.api.i18n.Messages.Implicits._
@@ -32,23 +32,8 @@
 			}
 	</div>
 	}
-
 	
-<div class="page-title">
-	<h2>Increase quantity of a deal</h2>
-</div>
 
-	@helper.form(action = routes.PurchaseOrders.dealQuantity()) {
-		<fieldset style="margin-left:200px">
-		<legend>
-			@helper.inputText(dealForm("id"))
-			@helper.inputText(dealForm("quantity"))
-		</legend>
-		</fieldset>
-		<div style="padding-bottom:60px">
-			<input type="submit" class="btn primary" value="Submit" style="margin-left:400px">
-		</div>
-	}
 
 	
 }

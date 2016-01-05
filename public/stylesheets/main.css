@@ -9,6 +9,7 @@ body {
 	width:900px;
 	margin-left:auto;
 	margin-right:auto;
+	min-height:800px;
 }
 #title {
 	text-align:center;
