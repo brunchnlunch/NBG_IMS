@@ -1,13 +1,13 @@
 package models
 
-case class Supplier(id: Long, company: String, contactName: String, phoneNumber: String, email: String, products: List[Long], autoDeal: Boolean) {
+case class Supplier(id: Long, company: String, contactName: String, phoneNumber: String, email: String, address:String, products: List[Long], autoDeal: Boolean) {
 }
 
 object Supplier {
-  var Suppliers = Set(Supplier(1, "Ceramics inc", "Jeremy Table", "03069990317", "Ceramicsinc@gmail.com", List(5010255079763L, 5018206244666L, 5018306332812L, 5018306312913L, 5018206244611L), false),
-      Supplier(2, "Gnome-makers", "Susan Sofa", "03069990876", "Gnome-Makers@gmail.com", List(5018306332812L, 5018306312913L, 5018206244611L, 5018306312914L, 5018306318915L, 5018316318915L, 5018306319915L), false),
-      Supplier(3, "Garden Land", "Helen window", "03069990799", "Garden-Land@gmail.com", List(5018306318915L, 5018316318915L, 5018306319915L), false),
-      Supplier(4, "The Gnome factory", "Brian Foot", "03069990146", "Gnomefactory@gmail.com", List(5018316318915L, 5018306319915L, 5010255079763L), false))
+  var Suppliers = Set(Supplier(1, "Ceramics inc", "Jeremy Table", "03069990317", "Ceramicsinc@gmail.com", "19 Longdown Dr, Weston-super-Mare, North Somerset BS22 7US, UK", List(5010255079763L, 5018206244666L, 5018306332812L, 5018306312913L, 5018206244611L), false),
+      Supplier(2, "Gnome-makers", "Susan Sofa", "03069990876", "Gnome-Makers@gmail.com", "1 Hurricane Cl, Crossways, Dorchester, Dorset DT2 8TY, UK", List(5018306332812L, 5018306312913L, 5018206244611L, 5018306312914L, 5018306318915L, 5018316318915L, 5018306319915L), false),
+      Supplier(3, "Garden Land", "Helen window", "03069990799", "Garden-Land@gmail.com", "39 Oak Lodge Ave, Chigwell, Essex IG7 5JA, UK", List(5018306318915L, 5018316318915L, 5018306319915L), false),
+      Supplier(4, "The Gnome factory", "Brian Foot", "03069990146", "Gnomefactory@gmail.com", "1A Whitecote Rd, Southall, Greater London UB1 3NP, UK", List(5018316318915L, 5018306319915L, 5010255079763L), false))
  
 
   /**
@@ -45,7 +45,7 @@ object Supplier {
     var newSuppliers = Set.empty[Supplier]
     for (supplier <- Suppliers) {
       if (supplier.id == id) {
-        newSuppliers += Supplier(originalSupplier.id, originalSupplier.company, originalSupplier.contactName, originalSupplier.phoneNumber, originalSupplier.email, originalSupplier.products, bool)
+        newSuppliers += Supplier(originalSupplier.id, originalSupplier.company, originalSupplier.contactName, originalSupplier.phoneNumber, originalSupplier.email, originalSupplier.address, originalSupplier.products, bool)
       }
       else {
         newSuppliers += supplier

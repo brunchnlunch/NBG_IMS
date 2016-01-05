@@ -12,11 +12,19 @@
 		</h2>
 	</div>
 	
+	<div class="page-title", style="padding-top:0px">
+		@if(PO.confirmed){
+				<h2 style="color:green">Purchase Order Confirmed</h2>
+			}
+	</div>
+	
 	<div class="details-container">
 		<ul>
 			<li>Company Id: @PO.companyId</li>
 			<li>Company: @Supplier.findById(PO.companyId).get.company</li>
+			<li>Company address: @Supplier.findById(PO.companyId).get.address</li>
 			<li>Date order placed: @PO.date</li>
+			<li style="padding-top:20px">Ship to: 43 Gloucester Rd, Aldershot, Hampshire GU11 3SJ, UK</li>
 		</ul>
 	</div>
 	
@@ -27,7 +35,7 @@
 	<div class="list-container">
 		@for(deal <- PO.deals){
 			<div class="list-item">
-				<a href="">
+				<a href="@controllers.routes.Deals.show(deal.id)">
 					<ul>
 						<li>Deal id: @deal.id</li>
 						<li>Quantity: @PO.quantities(deal.id)</li>
@@ -58,6 +66,13 @@
 	
 	<div class="page-title">
 		<h2>Total cost: £@PurchaseOrder.total(PO.id)</h2>
+	</div>
+	
+	<div style="padding-left:325px; padding-bottom:60px">
+		@if(PO.confirmed!=true){
+				<!-- pass arbitrary value PO.id -->
+				<a href="@controllers.routes.PurchaseOrders.confirm(PO.id)"><button type="button" class="btn">Confirm Purchse Order</button></a>
+			}
 	</div>
 	
 	

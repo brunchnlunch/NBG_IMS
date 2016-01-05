@@ -21,7 +21,7 @@ GET     /PurchaseOrders             controllers.PurchaseOrders.POList
 GET     /PurchaseOrders/:id         controllers.PurchaseOrders.show(id: Long)
 GET     /PurchaseOrders/a/:number   controllers.PurchaseOrders.addPO(number : Long)
 POST    /PurchaseOrders             controllers.PurchaseOrders.dealQuantity
-
+GET     /PurchaseOrders/b/:id       controllers.PurchaseOrders.confirm(id: Long)
 
 
 # Map static resources from the /public folder to the /assets URL path

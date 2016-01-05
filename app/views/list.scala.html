@@ -3,13 +3,20 @@
 @import play.api.i18n.Messages
 @import play.api.i18n.Messages.Implicits._
 @main(Messages("application.name")) {
-	<div id="stock-warning">
+	
+	
+	<div>
 		@if(stockRequired){
-			<h2 class="warning">Stock is low!</h2>
+			<div id="stock-warning">
+				<h2 class="warning">Stock is low!</h2>
+			</div>
 			} else {
-			<h2 class="warning">No new stock required.</h2>
+			<div id="stock-warning-g">
+				<h2 class="warning">No new stock required.</h2>
+			</div>
 			}
 	</div>
+	
 	<div class="page-title">
 		<h2>Product List</h2>
 	</div>

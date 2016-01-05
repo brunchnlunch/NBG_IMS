@@ -3,6 +3,7 @@ package controllers
 import models.PurchaseOrder
 import models.Deal
 import models.DealPartForm
+import models.Product
 import play.api._
 import play.api.data.Form
 import play.api.data.Forms.{mapping, longNumber, nonEmptyText}
@@ -45,6 +46,13 @@ class PurchaseOrders extends Controller {
 		  Redirect(routes.PurchaseOrders.show(PurchaseOrder.findByDealId(newDealPart.id).id))
 		}
 	)
+  }
+  
+  def confirm (id: Long) = Action {
+    implicit request =>
+      PurchaseOrder.confirm(id)
+      Product.increaseQuantityByPo(id)
+      Redirect(routes.PurchaseOrders.show(id))
   }
     
   

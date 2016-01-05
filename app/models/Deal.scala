@@ -180,13 +180,11 @@ object Deal {
         var d = new Date().getTime()/1000
         d.toInt
         var id = deal.companyId.toString + d.toString //creates an id by concatenating the company Id and date
-        PurchaseOrder.addPO(new PurchaseOrder(id.toLong, deal.companyId, POdeals.toList, d))
+        PurchaseOrder.addPO(new PurchaseOrder(id.toLong, deal.companyId, POdeals.toList, d, false))
       }
     }
     
   }
-  
-  //INCREASE PRODUCT QUANTITY WHEN ADDING PO????
   
   
   

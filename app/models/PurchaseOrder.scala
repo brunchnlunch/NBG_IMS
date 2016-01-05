@@ -3,7 +3,7 @@ package models
 import scala.collection.mutable.Map
 
 //create id by adding together companyId and date?
-case class PurchaseOrder (id: Long, companyId: Long, deals : List[Deal], date: Long ) {
+case class PurchaseOrder (id: Long, companyId: Long, deals : List[Deal], date: Long, confirmed: Boolean ) {
   var quantities = createDictionary
 
 
@@ -85,6 +85,19 @@ object PurchaseOrder {
     PO.quantities(id) = quantity
   }
   
+  def confirm (id:Long) {
+    var PO = PurchaseOrder.findById(id).get
+    var newPO = PurchaseOrder(id, PO.companyId, PO.deals, PO.date, true)
+    var newPOs = Set.empty[PurchaseOrder]
+    for(po <- purchaseOrders){
+      if(po.id == id){
+        newPOs += newPO
+      }else{
+        newPOs += po
+      }
+    }
+    purchaseOrders = newPOs
+  }
   
   
   

@@ -21,7 +21,12 @@
 					<ul>
 						<li>ID: @PO.id</li>
 						<li>Date: @PO.date</li>
-					</ul>
+						@if(PO.confirmed){
+								<li style="color:green">Confirmed</li>
+							}else{
+								<li style="color:#ff3333">Not confirmed</li>
+							}
+					</ul>					
 				</a>
 			</div>
 			}

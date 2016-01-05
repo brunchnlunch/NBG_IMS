@@ -77,7 +77,8 @@ object Product { //Each product has a quantity threshhold
   /**
    * Increases quantity of products in a given PO.
    */
-  def increaseQuantityByPo (PO: PurchaseOrder) {
+  def increaseQuantityByPo (id: Long) {
+    var PO = PurchaseOrder.findById(id).get
     for(deal <- PO.deals){
       for(product <- deal.products){
         var amount=PO.quantities(deal.id)*product.quantity
@@ -85,8 +86,6 @@ object Product { //Each product has a quantity threshhold
       }
     }
   }
-  
-//MAKE CONFIRM PO function WHICH CALLS IncreaseQuantityByPo
 
   
   
