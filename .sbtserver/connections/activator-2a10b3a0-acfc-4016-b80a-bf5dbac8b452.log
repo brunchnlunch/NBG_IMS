@@ -9861,3 +9861,7 @@ Sending msg to client activator-2a10b3a0-acfc-4016-b80a-bf5dbac8b452: Background
 Sending msg to client activator-2a10b3a0-acfc-4016-b80a-bf5dbac8b452: BackgroundJobLogEvent(1,LogMessage(info,--- (RELOAD) ---))
 Sending msg to client activator-2a10b3a0-acfc-4016-b80a-bf5dbac8b452: BackgroundJobLogEvent(1,LogMessage(info,))
 Sending msg to client activator-2a10b3a0-acfc-4016-b80a-bf5dbac8b452: BackgroundJobLogEvent(1,LogMessage(info,- play.api.Play - Application started (Dev)))
+Client activator-2a10b3a0-acfc-4016-b80a-bf5dbac8b452 closed, java.net.SocketException: Connection reset, shutting down
+Stopping client.
+Dropping message (0,ReceivedResponse()) to dead client activator-2a10b3a0-acfc-4016-b80a-bf5dbac8b452
+Client activator-2a10b3a0-acfc-4016-b80a-bf5dbac8b452 thread exiting.
