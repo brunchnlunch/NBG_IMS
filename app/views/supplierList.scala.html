@@ -1,4 +1,4 @@
-@(suppliers: List[Supplier], productForm: Form[ProductPartForm])(implicit flash: Flash, lang: Lang)
+@(suppliers: List[Supplier], productForm: Form[ProductPartForm], dealForm: Form[AddDealForm])(implicit flash: Flash, lang: Lang)
 @import play.api.Play.current
 @import play.api.i18n.Messages
 @import play.api.i18n.Messages.Implicits._
@@ -62,8 +62,29 @@
 		<div style="padding-bottom:60px">
 			<input type="submit" class="btn primary" value="Submit" style="margin-left:400px">
 		</div>
-		
-		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="page-title">
+		<h2>Add deal:</h2>
+	</div>
+	
+	@helper.form(action = routes.Suppliers.addDeal()) {
+		<fieldset style="margin-left:200px">
+		<legend>
+			@helper.inputText(dealForm("ean"))
+		</legend>
+		</fieldset>
+		<div style="padding-bottom:60px">
+			<input type="submit" class="btn primary" value="Submit" style="margin-left:400px">
+		</div>
 	}	
 	
 }

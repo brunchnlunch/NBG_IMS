@@ -9,6 +9,9 @@ GET     /RequiredProducts           controllers.Products.requiredList
 GET     /Suppliers                  controllers.Suppliers.supplierList
 GET     /Suppliers/:id              controllers.Suppliers.show(id: Long)
 POST    /Suppliers                  controllers.Suppliers.findByProduct
+
+POST    /Suppliers/b                controllers.Suppliers.addDeal
+
 GET     /Suppliers/a/:id            controllers.Suppliers.toggle(id: Long)
 #Why does the above line work??!!
 GET     /Deals                      controllers.Deals.dealList

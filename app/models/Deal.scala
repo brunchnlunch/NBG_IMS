@@ -164,6 +164,9 @@ object Deal {
     acceptedDeals.toList
   }
   
+  /**
+   * takes accepted deals and creates purchase orders from them, purchase orders are separated by company
+   */
   def createPO {
     var acceptedDeals = findByAccepted
     var checkedCompanyIds = Set.empty[Long]

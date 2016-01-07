@@ -1,9 +1,0 @@
-New log file opened at Tue Jan 05 17:00:03 GMT 2016 by 5912@FoxyOrange
-Sending msg to client activator-802f5277-a976-4cfb-a265-548ab3bbfcff: DetachedLogEvent(LogMessage(debug,sbt server socket logs are in: C:\Users\charl\workspace\NBG_IMS\.sbtserver\connections\master.log))
-Sending msg to client activator-802f5277-a976-4cfb-a265-548ab3bbfcff: DetachedLogEvent(LogMessage(debug,sbt client logs are in: C:\Users\charl\workspace\NBG_IMS\.sbtserver\connections\activator-802f5277-a976-4cfb-a265-548ab3bbfcff.log))
-Reading next message from client.
-Sending msg to client activator-802f5277-a976-4cfb-a265-548ab3bbfcff: DetachedLogEvent(LogMessage(debug,sbt general server logs are in: C:\Users\charl\workspace\NBG_IMS\.sbtserver\master.log))
-Client activator-802f5277-a976-4cfb-a265-548ab3bbfcff EOF, shutting down.
-Stopping client.
-Dropping message (0,ReceivedResponse()) to dead client activator-802f5277-a976-4cfb-a265-548ab3bbfcff
-Client activator-802f5277-a976-4cfb-a265-548ab3bbfcff thread exiting.

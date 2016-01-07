@@ -11,14 +11,17 @@ import play.api.Play.current
 import models.Supplier
 import models.ProductPartForm
 import models.Deal
+import models.AddDealForm
 
 class Suppliers extends Controller {
   private val productForm: Form[ProductPartForm] = Form(mapping("ean" -> longNumber)(ProductPartForm.apply)(ProductPartForm.unapply))
   
+  private val dealForm: Form[AddDealForm] = Form(mapping("ean" -> longNumber)(AddDealForm.apply)(AddDealForm.unapply))
+
   def supplierList = Action {
     implicit request =>
       val suppliers = Supplier.findAll
-      Ok(views.html.supplierList(suppliers, productForm))
+      Ok(views.html.supplierList(suppliers, productForm, dealForm))
   }
   
   def show(id: Long) = Action {
@@ -31,13 +34,14 @@ class Suppliers extends Controller {
 	val newProductForm = productForm.bindFromRequest()
 	newProductForm.fold(
 		hasErrors = { form =>
+		  println(form.data)
 		  val message = "Incorrent EAN number! Please try again."
 			Redirect(routes.Suppliers.supplierList()).flashing("error" -> message)
 		},
 		success = { newProduct =>
 			val productSuppliers = Supplier.findByProduct(newProductForm.get.ean)
 			val message2 = "It worked!"  //can't display message?
-		  Ok(views.html.supplierList(productSuppliers, productForm)).flashing("success" -> message2)
+		  Ok(views.html.supplierList(productSuppliers, productForm ,dealForm)).flashing("success" -> message2)
 		}
 	)
   }
@@ -53,6 +57,23 @@ class Suppliers extends Controller {
     implicit request =>
       Deal.autoContact
       Redirect(routes.Deals.dealList)
+  }
+  
+  //-------------------
+  
+  def addDeal = Action { implicit request =>
+	val newDealForm = dealForm.bindFromRequest()
+	dealForm.fold(
+		hasErrors = { form =>
+		  println(form.data)
+			val message = "Incorrent EAN number! Please try again."
+			Redirect(routes.Suppliers.supplierList()).flashing("error" -> message)
+		},
+		success = { newDeal =>
+		  val message2 = "a"
+			Redirect(routes.Products.list).flashing("success" -> message2)
+		}
+	)
   }
   
 }
